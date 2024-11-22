@@ -1,0 +1,277 @@
+{% extends 'soul/main.html' %}
+{% load static %}
+  {%block content%}
+
+
+
+ 
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container">
+      <h1>your hair and skin deserve the best</h1>
+      <div class="product">
+        <picture>
+          <source
+            media="(min-width: 40em)"
+            srcset="{% static 'images/content/hair.jpg'%}"
+            width="564"
+            height="846"
+          />
+
+          <img
+            class="hero_img"
+            src="{% static 'images/content/hair.jpg'%}"
+            alt="Product 3"
+          />
+        </picture>
+      </div>
+      <div class="product">
+        <h2>souled</h2>
+        <p>With Function of Beauty, you are guaranteed a highly efficacious formula with no compromises. Always clean, vegan, and cruelty-free, our formulas focus on naturally-derived ingredients and powerful science to meet high efficacy and testing standards.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Mission section-->
+  <section class="mission">
+    <div class="container">
+      <!-- Mission Description -->
+      <div class="product">
+        <br />
+        <h2>OUR MISSION</h2>
+        <p>
+          Ever realized that your reflection is uniquely yours? Each detail speaks to your individuality. We saw a gap in the beauty industry's acknowledgment of this uniqueness and stepped in. Function of Beauty celebrates you with tailor-made, naturally-derived formulas, crafted by in-house chemists and beauty experts.
+        </p>
+      </div>
+
+      <!-- Mission Image -->
+      <div class="product">
+        <picture>
+          <source
+            media="(min-width: 40em)"
+            srcset="{% static 'images/content/hair5.jpg'%}"
+            width="474"
+            height="687"
+          />
+          <img src="{% static 'images/content/hair5.jpg'%}" alt="" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products section -->
+  <section class="products">
+    <div class="container">
+      <div class="product">
+        <div>
+          <picture>
+            <source
+              media="(min-width: 40em)"
+              srcset="{% static 'images/products/product (2).jpg'%}"
+              width="3562"
+              height="5343"
+            />
+
+            <img src="{% static 'images/products/product (2).jpg'%}" alt="Product 3" />
+          </picture>
+        </div>
+        <h3>Product 1</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div>
+          <picture>
+            <source
+              media="(min-width: 40em)"
+              srcset="{% static 'images/products/product (2).jpg'%}"
+              width="3562"
+              height="5343"
+            />
+
+            <img src="{% static 'images/products/product (2).jpg'%}" />
+          </picture>
+        </div>
+        <h3>Product 1</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div>
+          <picture>
+            <source
+              media="(min-width: 40em)"
+              srcset="{% static 'images/products/product (2).jpg'%}"
+              width="3562"
+              height="5343"
+            />
+
+            <img src="{% static 'images/products/product (2).jpg'%}" alt="Product 3" />
+          </picture>
+        </div>
+        <h3>Product 1</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonies-->
+  
+<div class="container">
+      <div class="product">
+        <div>
+          <picture>
+            <source
+              media="(min-width: 40em)"
+              srcset="{% static 'images/content/hair5.jpg'%}"
+              width="474"
+              height="687"
+            />
+            <img src="{% static 'images/content/hair5.jpg'%}" alt="" />
+          </picture>
+          <h3>BEFORE</h3>
+        </div>
+      </div>
+      <div class="product">
+        <div>
+          <picture>
+            <source
+            media="(min-width: 40em)"
+            srcset="{% static 'images/content/hair5.jpg'%}"
+            width="474"
+            height="687"
+          />
+          <img src="{% static 'images/content/hair5.jpg'%}" alt="" />
+          </picture>
+          <h3>AFTER</h3>
+        </div>
+      </div>
+
+      <div class="product">
+        <p>
+          Here is a comparison of the before and after images, showing the
+          transformation. The left image represents the state before the
+          change, and the right image shows the result after the process.
+        </p>
+      </div>
+</div>
+  
+
+  <!-- Browse by categories -->
+
+  <div class="container">
+    <div class="category">
+      <h3><a href="#">Shop skincare</a></h3>
+
+      <div>
+        <picture>
+          <source
+            media="(min-width: 40em)"
+            srcset="{% static 'images/products/product (2).jpg' %}"
+            width="3562"
+            height="5343"
+          />
+
+          <img src="{% static 'images/products/product (2).jpg' %}" alt="Product 3" />
+        </picture>
+      </div>
+
+      <p>$39.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="category">
+      <h3><a href="#">Shop haircare</a></h3>
+
+      <div>
+        <picture>
+          <source
+          media="(min-width: 40em)"
+          srcset="{% static 'images/products/product (2).jpg' %}"
+          width="3562"
+          height="5343"
+        />
+
+        <img src="{% static 'images/products/product (2).jpg' %}" alt="Product 3" />
+        </picture>
+      </div>
+
+      <p>$39.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="category">
+      <h3><a href="#">Shop accessories</a></h3>
+
+      <div>
+        <picture>
+          <source
+          media="(min-width: 40em)"
+          srcset="{% static 'images/products/product (2).jpg' %}"
+          width="3562"
+          height="5343"
+        />
+
+        <img src="{% static 'images/products/product (2).jpg' %}" alt="Product 3" />
+        </picture>
+      </div>
+
+      <p>$39.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  
+
+  <!-- contact us -->
+  <section class="contact_us">
+    <div class="container">
+      <!--form-->
+      <div class="product">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          {% csrf_token %}
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" id="msg-btn" class="submit-btn">Submit</button>
+        </form>
+        
+      
+      <!-- Success Message -->
+      <div id="success-message" style="display:none;">
+          <p>Message was submitted successfully!</p>
+      </div>
+      
+      </div>
+
+      <!-- WhatsApp Community Section -->
+      <div class="product">
+        <h3>Join Our WhatsApp Community</h3>
+        <p>
+          Click the icon below to join our whatsapp Communitywhere you will be
+          apdated on all the ways to maintain good and healthy skin and hair.
+        </p>
+        <br />
+        <br />
+
+        <img
+          src="{% static 'images/icons/whatsapp.svg'%}"
+          alt="Join WhatsApp Community"
+          class="social-icon"
+        />
+      </div>
+    </div>
+  </section>
+ 
+  {% endblock%}
+
+  

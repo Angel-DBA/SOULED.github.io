@@ -1,0 +1,68 @@
+{% extends 'soul/main.html' %}
+{% load static %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="category">
+      <h3><a href="#">Shop skincare</a></h3>
+
+      <div>
+        <picture>
+          <source
+            media="(min-width: 40em)"
+            srcset="{% static 'images/products/product (2).jpg' %}"
+            width="3562"
+            height="5343"
+          />
+
+          <img src="{% static 'images/products/product (2).jpg' %}" alt="Product 3" />
+        </picture>
+      </div>
+
+      <p>$39.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="category">
+      <h3><a href="#">Shop haircare</a></h3>
+
+      <div>
+        <picture>
+          <source
+          media="(min-width: 40em)"
+          srcset="{% static 'images/products/product (2).jpg' %}"
+          width="3562"
+          height="5343"
+        />
+
+        <img src="{% static 'images/products/product (2).jpg' %}" alt="Product 3" />
+        </picture>
+      </div>
+
+      <p>$39.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="category">
+      <h3><a href="#">Shop accessories</a></h3>
+
+      <div>
+        <picture>
+          <source
+          media="(min-width: 40em)"
+          srcset="{% static 'images/products/product (2).jpg' %}"
+          width="3562"
+          height="5343"
+        />
+
+        <img src="{% static 'images/products/product (2).jpg' %}" alt="Product 3" />
+        </picture>
+      </div>
+
+      <p>$39.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+
+ 
+{% endblock%}

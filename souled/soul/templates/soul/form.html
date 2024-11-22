@@ -1,0 +1,51 @@
+{% extends 'soul/main.html' %}
+
+
+
+<section class="contact_us">
+  <div class="container">
+    <!--form-->
+    <div class="product">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        {% csrf_token %}
+        <div>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" id="msg-btn" class="submit-btn">Submit</button>
+      </form>
+
+      <!-- Success Message (Hidden Initially) -->
+<div id="success-message" style="display:none;">
+  <p>Message was submitted successfully!</p>
+</div>
+     
+    </div>
+
+    <!-- WhatsApp Community Section -->
+    <div class="product">
+      <h3>Join Our WhatsApp Community</h3>
+      <p>
+        Click the icon below to join our whatsapp Communitywhere you will be
+        apdated on all the ways to maintain good and healthy skin and hair.
+      </p>
+      <br />
+      <br />
+
+      <img
+        src="src\images\icons\whatsapp.svg"
+        alt="Join WhatsApp Community"
+        class="social-icon"
+      />
+    </div>
+  </div>
+</section>

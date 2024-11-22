@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  {% load static %}
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>souled</title>
+  <link rel="stylesheet" href="{% static 'css\main.css' %}">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Navigation links on the left -->
+    <div class="navbar-left">
+      <ul>
+        <li class="dropdown">
+          <a href="#about" class="dropbtn">About</a>
+          <div class="dropdown-content">
+            <div class="cell">
+              <h2>About Us</h2>
+              <p>Content goes here for the first cell.</p>
+            </div>
+            <div class="cell">
+              <h2>Mission</h2>
+              <p>Content goes here for the second cell.</p>
+            </div>
+            <div class="cell">
+              <h2>follow us</h2>
+              <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"
+                ><img
+                  src="{% static 'images/icons/instagram.svg'%}"
+                  alt="instagram"
+                  class="icon"
+              /></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><img src="{% static 'images/icons/twitter-x.svg'%}" alt="Twitter" class="icon"
+              /></a>
+              <a href="https://www.tiktok.com" target="_blank"
+                ><img src="{% static 'images/icons/tiktok.svg'%}" alt="tiktok" class="icon"
+              /></a>
+              <a href="https://www.thread.com" target="_blank"
+                ><img src="{% static 'images/icons/threads.svg'%}" alt="thread" class="icon"
+              /></a>
+              <a href="https://www.youtube.com" target="_blank"
+                ><img src="{% static 'images/icons/youtube.svg'%}" alt="YouTube" class="icon"
+              /></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#shop" class="dropbtn">Shop</a>
+          <div class="dropdown-content">
+            <div class="cell">
+              <h2>Hair Products</h2>
+              <p>Content goes here for the first cell.</p>
+            </div>
+            <div class="cell">
+              <h2>Skin Products</h2>
+              <p>Content goes here for the second cell.</p>
+            </div>
+            <div class="cell">
+              <h2>Accessories</h2>
+              <p>Content goes here for the second cell.</p>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#payment" class="dropbtn">Payment Methods</a>
+          <div class="dropdown-content">
+            <div class="cell">
+              <h2>BANK</h2>
+  
+              <i class="fas fa-credit-card payment-icon"> </i>
+              <!-- Credit Card Icon -->
+              <br />
+              <br />
+            </div>
+            <div class="cell">
+              <h2>LIPA</h2>
+  
+              <i class="fas fa-credit-card payment-icon"> </i>
+              <!-- Credit Card Icon -->
+              <br />
+              <br />
+            </div>
+            <div class="cell">
+              <h2>M-PESA</h2>
+  
+              <i class="fas fa-credit-card payment-icon"> </i>
+              <!-- Credit Card Icon -->
+              <br />
+              <br />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Logo in the center -->
+    <div class="navbar-center">
+      <div class="logo">
+        <img
+          src="{% static 'images/icons/logo.svg'%}"
+          alt="Company Logo"
+          width="200"
+          height="50"
+        />
+      </div>
+    </div>
+    <!-- Navbar Right Section -->
+  
+    <!-- Navbar Right Section -->
+    <div class="navbar-right">
+      <ul>
+        <!-- Search Icon -->
+        <li class="search">
+          <img
+            id="searchIcon"
+            src="{% static 'images/icons/search.svg'%}"
+            alt="Search Icon"
+          />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by product or keyword"
+            aria-label="Search"
+            style="display: none"
+          />
+        </li>
+  
+        <!-- Profile icon on the right -->
+        <li class="dropdown">
+          <a href="#profile" class="dropbtn">
+            <img src="{% static 'images/icons/profile.svg'%}"/>
+            <!-- Profile icon -->
+          </a>
+          <div class="dropdown-content profile-dropdown-content">
+            <!-- Unique IDs for the buttons, now as anchor tags linking to the respective pages -->
+            <a
+              href="{% url 'user' %}"
+              class="btn toggle-btn"
+              id="login-button"
+              >Login</a
+            >
+            <a
+              href="{% url 'user' %}"
+              class="btn toggle-btn"
+              id="register-button"
+              >Log out</a
+            >
+          </div>
+        </li>
+        <!-- Cart icon on the right -->
+        <li class="dropdown">
+          <a href="#" id="cart" onclick="toggleCartDropdown(event)">
+            <img src="{% static 'images/icons/cart.svg'%}" />
+            <!-- Cart icon -->
+          </a>
+          <span class="cart-badge" id="cart-count">0</span>
+          <!-- Badge with number -->
+          <div class="cart-dropdown" id="cart-dropdown"></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+
+
+  {%block content%}
+
+
+
+ 
+  {% endblock%}
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank"
+        ><img
+          src="{% static 'images/icons/instagram.svg'%}"
+          alt="instagram"
+          class="icon"
+      /></a>
+      <a href="https://www.twitter.com" target="_blank"
+        ><img src="{% static 'images/icons/twitter-x.svg'%}" alt="Twitter" class="icon"
+      /></a>
+      <a href="https://www.tiktok.com" target="_blank"
+        ><img src="{% static 'images/icons/tiktok.svg'%}" alt="tiktok" class="icon"
+      /></a>
+      <a href="https://www.thread.com" target="_blank"
+        ><img src="{% static 'images/icons/threads.svg'%}" alt="thread" class="icon"
+      /></a>
+      <a href="https://www.youtube.com" target="_blank"
+        ><img src="{% static 'images/icons/youtube.svg'%}" alt="YouTube" class="icon"
+      /></a>
+    </div>
+    <p class="rights-reserved">&copy; 2024 All rights reserved</p>
+  </footer>
+  <script src="{% static 'jsDist\script.js' %}"></script>
+</body>
+</html>
