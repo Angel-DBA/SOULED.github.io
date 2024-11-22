@@ -15,7 +15,7 @@ def user(request):
     return render(request, 'soul/user.html')
 
 def home(request):
-    return render(request, 'soul/home.html')
+    return render(request, 'soul/index.html')
 
 
 
